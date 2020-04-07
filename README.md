@@ -6,8 +6,8 @@
 
 ## Links
 
-* Repository: <https://github.com/profcase/44-691-gdp1-syllabus>
-* Webpage: <https://profcase.github.io/44-691-gdp1-syllabus>
+* Repository: <https://github.com/denisecase/44-691-gdp1-syllabus>
+* Webpage: <https://denisecase.github.io/44-691-gdp1-syllabus>
 
 ## Recommended
 
