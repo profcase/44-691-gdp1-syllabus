@@ -114,9 +114,9 @@ This syllabus is a progressive web app, and can be installed on mobile and other
 Basic icon built with [Favicon.io](https://favicon.io)
 
 - Generate from Text
-- Text: DATA
+- Text: GDP1
 - Background: Rounded
-- Font family: Hanalei Fill
+- Font family: Cabin Condensed
 - Font size: 50
 - Color: #FFFFFF
 - Background: #006747
