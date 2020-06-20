@@ -150,7 +150,6 @@ if (workbox) {
             '.',
             'index.html',
             'scripts/register-sw.js',
-            'web-components/nw-syllabus-outline.js',
           ]),
         )
         .catch((error) => {
