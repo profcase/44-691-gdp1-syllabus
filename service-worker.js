@@ -145,13 +145,13 @@ if (workbox) {
     event.waitUntil(
       caches
         .open(precacheCacheName)
-        .then((cache) =>
-          cache.addAll([
-            '.',
-            'index.html',
-            'scripts/register-sw.js',
-          ]),
-        )
+        .then((cache) => cache.addAll([
+          '.',
+          'index.html',
+          'scripts/register-sw.js',
+          'web-components/nw-syllabus-outline.js',
+          'init.js',
+        ]))
         .catch((error) => {
           console.error(`Error in install event: ${error} `);
         }),

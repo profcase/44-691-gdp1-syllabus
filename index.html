@@ -510,16 +510,8 @@
             </ul>
           </div>
 
-          <nw-syllabus-outline
-          mod1="Course intro, client requirements and RFPs, rapid response"
-          mod2="Team organization, work allocation, begin consolidated design documentation"
-          mod3="Begin implementation of Minimially Viable Products (MVP)"
-          mod4="Demonstrations, updates to design and MVPs"
-          mod5="Demonstrations, updates to design and MVPs"
-          mod6="Demonstrations, updates to design and MVPs"
-          mod7="Final MVP, initial project plan for next semester, final submission"
-        >
-        </nw-syllabus-outline>
+          <nw-syllabus-modules-outline> </nw-syllabus-modules-outline>
+          <nw-syllabus-schedule> </nw-syllabus-schedule>
 
           <h2>Instructional Methods and Techniques</h2>
 
@@ -640,7 +632,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Include shared scripts -->
+    <!-- Include data-driven components -->
+
+    <script
+      defer
+      type="module"
+      src="./web-components/nw-syllabus-outline.js"
+    ></script>
+
+    <!-- Include shared components -->
 
     <script
       defer
@@ -666,6 +666,10 @@
       defer
       src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-professor-standard.js"
     ></script>
+    <script
+    defer
+    src="https://denisecase.github.io/44-517-bigdata-syllabus/web-components/nw-syllabus-schedule.js"
+  ></script>
 
     <script
       defer
