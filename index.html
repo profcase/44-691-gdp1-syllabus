@@ -3,10 +3,11 @@
 
 <head>
   <!--  establish early connections to important third-party origins -->
-  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
   <link rel="preconnect" href="https://storage.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://use.fontawesome.com" />
-  <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" />
+  <link rel="preload" href="https://cdnjs.cloudflare.com" as="style" />
 
   <!-- Put Google Analytics immediately after head tag -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,31 +48,36 @@
   <link rel="icon" type="image/png" sizes="16x16"
     href="./images/favicon_io/favicon-16x16.png" />
 
-  <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
-  <!-- Material Design for Bootstrap fonts and icons -->
-  <!-- Add defer for improved performance -->
-  <!-- Explicitly opt in to CORS with crossorigin = "anonymous" -->
-  <!-- https://developers.google.com/web/tools/workbox/guides/handle-third-party-requests -->
+ <!-- https://mdbootstrap.com/md-bootstrap-cdn/ -->
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <!-- Add defer for improved performance -->
+    <!-- Explicitly opt in to CORS with crossorigin = "anonymous" -->
+    <!-- https://developers.google.com/web/tools/workbox/guides/handle-third-party-requests -->
 
-  <!-- Font Awesome -->
-  <link defer rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link
+      defer
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-    crossorigin="anonymous" />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
 
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet"
-    href="https://denisecase.github.io/44-517-bigdata-syllabus/MDB-Free_4.19.0/css/mdb.min.part.css" />
+    <!-- Material Design Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://denisecase.github.io/44-517-bigdata-syllabus/MDB-Free_4.19.0/css/mdb.min.part.css"
+    />
 
   <!-- Custom styles -->
   <link rel="stylesheet"
     href="https://denisecase.github.io/44-517-bigdata-syllabus/styles/case-syllabus.css" />
-  <link rel="stylesheet"
-    href="https://denisecase.github.io/44-517-bigdata-syllabus/styles/active-checks.css" />
 
   <!-- Service worker -->
   <!-- If the browser (navigator) enables service workers, then after loading, register -->
@@ -121,7 +127,7 @@
         graduate advisor.
 
         <h2>Section Details</h2>
-          
+
         Fall 2020 - Section 2
         <br>
         MWF 8-8:50am CH 1700
@@ -271,33 +277,39 @@
 
         <div class="form-check">
           <ul class="list-group" style="list-style-type: none;">
-            <li id="101" class="requirement-li  list-group-item list-group-item-action active">
+            <li id="101"
+              class="requirement-li  list-group-item list-group-item-action active">
               A <strong>bound notebook with pencil/pen</strong> for taking
               notes and submitting written content (e.g., pop quizzes)
             </li>
-            <li id="102" class="requirement-li list-group-item list-group-item-action active">
+            <li id="102"
+              class="requirement-li list-group-item list-group-item-action active">
               Their campus-assigned laptop, in working order, with all
               required software
             </li>
-            <li id="103" class="requirement-li list-group-item list-group-item-action active">
+            <li id="103"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://git-scm.com/">Git</a>
               distributed version control system
             </li>
-            <li id="104" class="requirement-li list-group-item list-group-item-action active">
+            <li id="104"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://tortoisegit.org/">TortoiseGit</a>
               for integrating Git with Windows File Explorer
             </li>
-            <li id="105" class="requirement-li list-group-item list-group-item-action active">
+            <li id="105"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>
               for creating SSH public/private key pairs
             </li>
-            <li id="106" class="requirement-li list-group-item list-group-item-action active">
+            <li id="106"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://bitbucket.org">BitBucket</a>
@@ -306,7 +318,8 @@
                 href="https://github.com/">GitHub</a>
               educational accounts
             </li>
-            <li id="107" class="requirement-li list-group-item list-group-item-action active">
+            <li id="107"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://education.github.com/pack">GitHub Education
@@ -314,50 +327,58 @@
               (as needed)
             </li>
 
-            <li id="108" class="requirement-li list-group-item list-group-item-action active">
+            <li id="108"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://chocolatey.org/">Chocolatey</a>
               package manager for Windows
             </li>
-            <li id="109" class="requirement-li list-group-item list-group-item-action active">
+            <li id="109"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://notepad-plus-plus.org/">Notepad++</a>
               text editor
             </li>
-            <li id="110" class="requirement-li list-group-item list-group-item-action active">
+            <li id="110"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://code.visualstudio.com/">Visual Studio Code</a>
               integrated development environment
             </li>
 
-            <li id="111" class="requirement-li list-group-item list-group-item-action active">
+            <li id="111"
+              class="requirement-li list-group-item list-group-item-action active">
               Free Atlassian
               <a rel="noopener" target="_blank"
                 href="https://education.github.com/pack">Jira</a>
               account for planning and tracking
             </li>
 
-            <li id="112" class="requirement-li list-group-item list-group-item-action active">
+            <li id="112"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://developer.apple.com/xcode/">XCode</a>
               integrated development environment (as needed)
             </li>
-            <li id="113" class="requirement-li list-group-item list-group-item-action active">
+            <li id="113"
+              class="requirement-li list-group-item list-group-item-action active">
               Free
               <a rel="noopener" target="_blank"
                 href="https://developer.android.com/studio/">Android Studio</a>
               integrated development environment (as needed)
             </li>
 
-            <li id="117" class="requirement-li list-group-item list-group-item-action active">
+            <li id="117"
+              class="requirement-li list-group-item list-group-item-action active">
               Various free, open-source tools, libraries, and hosting accounts
               as directed by instructor.
             </li>
-            <li id="118" class="requirement-li list-group-item list-group-item-action active">
+            <li id="118"
+              class="requirement-li list-group-item list-group-item-action active">
               Access to free cloud accounts including Amazon Web Services
               (AWS), Google Cloud Platform (GCP), IBM Cloud, Microsoft Azure,
               and Oracle Cloud as required.
@@ -375,28 +396,7 @@
         discussions,client communications, client presentations, and
         collaborative development.
 
-        <h2>Grading and Evaluation</h2>
-
-        <p>Graded contributions</p>
-
-        <table class="tg">
-          <tr>
-            <th>Category</th>
-            <th>Contribution</th>
-          </tr>
-          <tr>
-            <td>Individual Performance</td>
-            <td>50%</td>
-          </tr>
-          <tr>
-            <td>Group Artifacts and Outcomes</td>
-            <td>50%</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>100%</td>
-          </tr>
-        </table>
+        <nw-syllabus-contributions></nw-syllabus-contributions>
 
         <p>Grading scale</p>
         <table class="tg">
@@ -449,36 +449,30 @@
   <!-- Placed at the end so the page loads faster -->
   <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
 
-  <!-- Copy in content from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+  <!-- Placed at the end so the page loads faster -->
+  <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
 
-  <!-- JQuery -->
-  <script defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Copy in content from https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
 
-  <!-- Bootstrap tooltips -->
-  <script defer
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  <!-- MDB -->
+  <script defer type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.js"></script>
+
+  <!-- Mark.js -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.es6.min.js"
+    integrity="sha256-51i9DIUkhl5gZzZ5xKiWbJ2qXewVR6W0MUZYPVwmyJ4="
     crossorigin="anonymous"></script>
-  <script defer
-    src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
 
-  <!-- MDB core JavaScript -->
-  <script defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+  <!-- Google charts-->
 
-    <!-- Mark.js -->
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.es6.min.js"
-      integrity="sha256-51i9DIUkhl5gZzZ5xKiWbJ2qXewVR6W0MUZYPVwmyJ4="
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
 
   <!-- Include custom data driven elements -->
 
+  <script defer type="module"
+    src="./custom-elements/nw-syllabus-contributions.js"></script>
   <script defer type="module"
     src="./custom-elements/nw-syllabus-outcomes-list.js"></script>
   <script defer type="module"
@@ -501,15 +495,12 @@
   <script defer
     src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-schedule.js"></script>
 
-    <!-- Include shared custom scripts -->
+  <!-- Include shared custom scripts -->
 
-    <script
-      defer
-      src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/active-checks.js"
-    ></script>
-    <script
-      defer
-      src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/case-syllabus.js"
-    ></script>
-  </body>
+  <script defer
+    src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/active-checks.js"></script>
+  <script defer
+    src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/case-syllabus.js"></script>
+</body>
+
 </html>
