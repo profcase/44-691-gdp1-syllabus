@@ -22,6 +22,7 @@
   },
   "license": "MIT",
   "author": "Denise Case",
+  "type": "module",
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",

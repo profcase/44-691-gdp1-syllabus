@@ -1,5 +1,6 @@
 # [44-691 Graduate Directed Project I Syllabus](https://denisecase.github.io/44-691-gdp1-syllabus)
 
+![CI](https://github.com/denisecase/44-691-gdp1-syllabus/workflows/CI/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/3c31941a3fd14f17859212b3ed9bda92)](https://www.codacy.com/manual/denisecase/44-691-gdp1-syllabus?utm_source=github.com&utm_medium=referral&utm_content=denisecase/44-691-gdp1-syllabus&utm_campaign=Badge_Grade)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/denisecase/44-691-gdp1-syllabus?style=flat)

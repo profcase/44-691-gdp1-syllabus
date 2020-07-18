@@ -1,4 +1,4 @@
-// export init object with the initialization data
+// export default object with the initialization data
 
 export default {
   mod1: "Course intro, client requirements and RFPs, rapid response",
@@ -8,5 +8,5 @@ export default {
   mod5: "Demonstrations, updates to design and MVPs",
   mod6: "Demonstrations, updates to design and MVPs",
   mod7: "Final MVP, initial project plan for next semester, final submission",
-}
+};
 

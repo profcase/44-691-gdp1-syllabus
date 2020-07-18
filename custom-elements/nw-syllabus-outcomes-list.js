@@ -50,7 +50,7 @@ class nwSyllabusOutcomesList extends HTMLElement {
       });
     });
   }
-}
+};
 
 window.customElements.define(
   'nw-syllabus-outcomes-list',

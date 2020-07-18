@@ -1,4 +1,5 @@
-// import default object from init.js with a local name; no extension needed
+// import default object with a local camelCase name
+// strict MIME checking is enforeced in modules
 import initOutline from '../init-outline.js';
 
 export default class nwSyllabusOutline extends HTMLElement {
@@ -19,31 +20,31 @@ export default class nwSyllabusOutline extends HTMLElement {
     </thead>
     <tr class="d-flex">
       <td class="col-3 ">1</td>
-      <td class="col-9 "> ${initOutline.mod1} </td>
+      <td class="col-9 "> ${initOutline.mod1.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">2</td>
-      <td class="col-9 "> ${initOutline.mod2} </td>
+      <td class="col-9 "> ${initOutline.mod2.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">3</td>
-      <td class="col-9 "> ${initOutline.mod3} </td>
+      <td class="col-9 "> ${initOutline.mod3.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">4</td>
-      <td class="col-9 "> ${initOutline.mod4} </td>
+      <td class="col-9 "> ${initOutline.mod4.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">5</td>
-      <td class="col-9 "> ${initOutline.mod5} </td>
+      <td class="col-9 "> ${initOutline.mod5.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">6</td>
-      <td class="col-9 "> ${initOutline.mod6} </td>
+      <td class="col-9 "> ${initOutline.mod6.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
     <tr class="d-flex">
       <td class="col-3 ">7</td>
-      <td class="col-9 "> ${initOutline.mod7} </td>
+      <td class="col-9 "> ${initOutline.mod7.replace(/[^a-zA-Z0-9-, ]/g, '')} </td>
     </tr>
   </table>
 
@@ -51,6 +52,6 @@ export default class nwSyllabusOutline extends HTMLElement {
 
     `;
   }
-}
+};
 
 window.customElements.define('nw-syllabus-outline', nwSyllabusOutline);
