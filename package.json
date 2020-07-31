@@ -1,10 +1,10 @@
 {
-  "name": "44-386-digital-forensics-syllabus",
+  "name": "44-691-gdp1-syllabus",
   "version": "1.0.0",
-  "description": "Northwest Missouri State University 44-386 Syllabus, a progressive web app",
+  "description": "Northwest Missouri State University 44-691 Syllabus",
   "keywords": [
     "syllabus",
-    "digital-forensics",
+    "graduate-projects",
     "html",
     "css",
     "javascript",
@@ -15,20 +15,24 @@
     "prettier",
     "husky"
   ],
-  "homepage": "https://www.nwmissouri.edu/csis/directory/case.htm",
+  "homepage": "https://github.com/denisecase/44-691-gdp1-syllabus#readme",
+  "bugs": {
+    "url": "https://github.com/denisecase/44-691-gdp1-syllabus/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/denisecase/44-691-gdp1-syllabus"
+    "url": "git+https://github.com/denisecase/44-691-gdp1-syllabus.git"
   },
   "license": "MIT",
   "author": "Denise Case",
-  "type": "module",
+  "main": "service-worker.js",
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "prettier": "prettier --write .",
-    "sort": "npx sort-package-json",
-    "test": "npx lighthouse-badges --urls https://denisecase.github.io/44-691-gdp1-syllabus/ -o test_results"
+    "sort": "npx npx sort-package-json",
+    "test": "npx lighthouse-badges --urls https://denisecase.github.io/44-691-gdp1-syllabus/ -o test_results",
+    "toc": "bash ./tools/gh-md-toc.sh ./README.md > ./tools/toc.md"
   },
   "husky": {
     "hooks": {
@@ -36,59 +40,18 @@
       "pre-push": "echo not running tests"
     }
   },
-  "prettier": {
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "overrides": [
-      {
-        "files": [
-          "*.html",
-          "*.js*",
-          "*.md",
-          "web-components/*.js",
-          "scripts/*.js"
-        ]
-      }
-    ]
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es2020": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 11,
-      "sourceType": "module"
-    },
-    "extends": [
-      "airbnb-base"
-    ],
-    "rules": {
-      "no-console": [
-        "error",
-        {
-          "allow": [
-            "warn",
-            "error"
-          ]
-        }
-      ]
-    },
-    "globals": {
-      "google": true,
-      "workbox": true
-    }
-  },
   "devDependencies": {
     "eslint": "latest",
     "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
     "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-scanjs-rules": "latest",
+    "eslint-plugin-xss": "latest",
     "husky": "latest",
     "prettier": "latest",
-    "prettier-eslint": "latest",
     "pretty-quick": "latest",
+    "remark-lint": "latest",
     "sort-package-json": "latest"
   }
 }

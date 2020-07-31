@@ -1,465 +1,625 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <!--  establish early connections to important third-party origins -->
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://storage.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://use.fontawesome.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-<head>
-  <!--  establish early connections to important third-party origins -->
-  <link rel="preconnect" href="https://www.google-analytics.com" />
-  <link rel="preconnect" href="https://storage.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://use.fontawesome.com" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <!-- Put Google Analytics immediately after head tag -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-65828104-12"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-65828104-12');
+    </script>
+    <!-- End Google Analytics -->
 
-  <!-- Put Google Analytics immediately after head tag -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-65828104-12"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-65828104-12');
-  </script>
-  <!-- End Google Analytics -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#006747" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" href="./favicon.ico" />
 
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#006747" />
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="icon" href="./favicon.ico" />
+    <title>44-691 GDP I</title>
+    <link
+      rel="canonical"
+      href="https://denisecase.github.io/44-691-gdp1-syllabus/"
+    />
+    <meta
+      name="description"
+      content="Syllabus for NWMSU 44-691 Graduate Directed Project I Course"
+    />
 
-  <title>44-691 GDP I</title>
-  <link rel="canonical"
-    href="https://denisecase.github.io/44-691-gdp1-syllabus/" />
-  <meta name="description"
-    content="Syllabus for NWMSU 44-691 Graduate Directed Project I Course" />
+    <meta name="author" content="Denise Case" />
+    <meta name="msapplication-TileColor" content="#006747" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon_io/favicon-16x16.png"
+    />
 
-  <meta name="author" content="Denise Case" />
-  <meta name="msapplication-TileColor" content="#006747" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style"
-    content="black-translucent" />
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="./images/favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="./images/favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="./images/favicon_io/favicon-16x16.png" />
+    <!-- https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <!-- Add defer for improved performance -->
 
-  <!-- https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
-  <!-- Material Design for Bootstrap fonts and icons -->
-  <!-- Add defer for improved performance -->
+    <!-- Font Awesome -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    rel="stylesheet">
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet">
-  <!-- MDB -->
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.css"
-    rel="stylesheet">
+    <!-- Custom styles -->
+    <link
+      rel="stylesheet"
+      href="https://denisecase.github.io/44-517-bigdata-syllabus/styles/case-syllabus.css"
+    />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet"
-    href="https://denisecase.github.io/44-517-bigdata-syllabus/styles/case-syllabus.css" />
+    <!-- Service worker -->
+    <!-- If the browser (navigator) enables service workers, then after loading, register -->
+    <!-- Use chrome://inspect/#service-workers to inspect -->
+    <script src="./scripts/register-sw.js"></script>
 
-  <!-- Service worker -->
-  <!-- If the browser (navigator) enables service workers, then after loading, register -->
-  <!-- Use chrome://inspect/#service-workers to inspect -->
-  <script src="./scripts/register-sw.js"></script>
+    <!-- Security Note -->
+    <!-- When adding links, use rel="noopener" to prevent linked page from being able to access window.opener property. -->
+    <!-- This ensures the new page will run in a separate process. -->
+  </head>
 
-  <!-- Security Note -->
-  <!-- When adding links, use rel="noopener" to prevent linked page from being able to access window.opener property. -->
-  <!-- This ensures the new page will run in a separate process. -->
-</head>
+  <body>
+    <nw-syllabus-header
+      shortNum="44-691"
+      courseURL="https://nwmissouri.instructure.com/courses/32360"
+    >
+    </nw-syllabus-header>
 
-<body>
-  <nw-syllabus-header shortNum="44-691"
-    courseURL="https://nwmissouri.instructure.com/courses/32360">
-  </nw-syllabus-header>
+    <!-- Main area: Add 'context' class for area subject to search marking -->
+    <!-- mt-5 is a Material Design Bootstrap class - it means 'margin top level 5 (the biggest)' -->
 
-  <!-- Main area: Add 'context' class for area subject to search marking -->
-  <!-- mt-5 is a Material Design Bootstrap class - it means 'margin top level 5 (the biggest)' -->
+    <main class="container context mt-5">
+      <!-- Main grid container-->
+      <div class="row">
+        <div class="col">
+          <img
+            width="154"
+            height="154"
+            src="images/northwestlogo.jpg"
+            alt="Northwest Logo"
+            class="img-thumbnail mt-5 mb-3"
+          />
 
-  <main class="container context mt-5">
-    <!-- Main grid container-->
-    <div class="row">
-      <div class="col">
-        <img width="154" height="154" src="images/northwestlogo.jpg"
-          alt="Northwest Logo" class="img-thumbnail mt-5 mb-3" />
+          <h1 class="mt-5">44-691 Course Syllabus</h1>
+          <br />
+          <br />
 
-        <h1 class="mt-5">44-691 Course Syllabus</h1>
-        <br />
-        <br />
+          <h2>Area</h2>
 
-        <h2>Area</h2>
+          School of Computer Science and Information Systems
 
-        School of Computer Science and Information Systems
+          <h2>Course Title</h2>
+          44-691 Graduate Directed Project I
 
-        <h2>Course Title</h2>
-        44-691 Graduate Directed Project I
+          <h2>Course Credit</h2>
+          3 hours
 
-        <h2>Course Credit</h2>
-        3 hours
+          <h2>Placement in Curriculum</h2>
+          This course is typically offered in the second-to-last term of the
+          MS-ACS graduate program.
 
-        <h2>Placement in Curriculum</h2>
-        This course is typically offered in the second-to-last term of the
-        MS-ACS graduate program.
+          <h2>Prerequisites</h2>
+          15 hours toward the MS. In Applied Computer Science and approval by
+          graduate advisor.
 
-        <h2>Prerequisites</h2>
-        15 hours toward the MS. In Applied Computer Science and approval by
-        graduate advisor.
+          <h2>Section Details</h2>
 
-        <h2>Section Details</h2>
+          Fall 2020 - Section 2
+          <br />
+          MWF 8-8:50am CH 1700
 
-        Fall 2020 - Section 2
-        <br>
-        MWF 8-8:50am CH 1700
+          <nw-syllabus-professor></nw-syllabus-professor>
 
-        <nw-syllabus-professor></nw-syllabus-professor>
+          <h2>Course Description</h2>
+          Software development practicum designed to integrate computer-related
+          skills into an intensive project environment. Students enroll in this
+          course for two consecutive semesters, for a total of six credit hours.
+          This is the first of the two courses.
 
-        <h2>Course Description</h2>
-        Software development practicum designed to integrate computer-related
-        skills into an intensive project environment. Students enroll in this
-        course for two consecutive semesters, for a total of six credit hours.
-        This is the first of the two courses.
+          <h2>Course Rationale</h2>
+          This course provides a chance for students to practice the skills
+          developed in earlier courses and further develop their skills using
+          profession-based learning. Students gain experience with designing,
+          developing, testing, and managing real world projects using modern
+          tools and techniques.
 
-        <h2>Course Rationale</h2>
-        This course provides a chance for students to practice the skills
-        developed in earlier courses and further develop their skills using
-        profession-based learning. Students gain experience with designing,
-        developing, testing, and managing real world projects using modern
-        tools and techniques.
+          <h2>Student Learning Outcomes</h2>
 
-        <h2>Student Learning Outcomes</h2>
-
-        <table class="table table-bordered" id="program-outcomes">
-          <thead class="thead-dark">
+          <table class="table table-bordered" id="program-outcomes">
+            <thead class="thead-dark">
+              <tr class="d-flex">
+                <th class="col-2">Compentency</th>
+                <th class="col-6">Program Outcome</th>
+                <th class="col-4">Assessment</th>
+              </tr>
+            </thead>
             <tr class="d-flex">
-              <th class="col-2">Compentency</th>
-              <th class="col-6">Program Outcome</th>
-              <th class="col-4">Assessment</th>
+              <td class="col-2">Communicating</td>
+              <td class="col-6">
+                An ability to communicate effectively with a range of audiences
+                about technical information.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
             </tr>
-          </thead>
-          <tr class="d-flex">
-            <th class="col-2">Communicating</th>
-            <th class="col-6">
-              An ability to communicate effectively with a range of audiences
-              about technical information.
-            </th>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Communicating</td>
-            <td class="col-6">
-              An ability to apply principles and concepts with technologies to
-              design and develop computer based solutions.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Critical Thinking</td>
-            <td class="col-6">
-              An ability to analyze a problem, and to identify and define the
-              computing requirements appropriate to its solution.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Critical Thinking</td>
-            <td class="col-6">
-              An ability to design, implement, and evaluate a computer-based
-              solution to meet a given set of computing requirements in the
-              context of the discipline.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Managing Information</td>
-            <td class="col-6">
-              An ability to apply models, tools, and techniques to implement
-              computer-based applications aligned with industry standards.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Valuing</td>
-            <td class="col-6">
-              An ability to make informed judgments in computing practice
-              based on legal and ethical, and social principles.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Diversity, Equity, and Inclusion</td>
-            <td class="col-6">
-              An ability to: a. utilize inclusive language and behaviors, b.
-              implement applications accommodating a wide range of individuals
-              including diversity in ethnic/cultural background, or physical
-              ability, and c. function as an effective member of a diverse
-              team.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Teamwork</td>
-            <td class="col-6">
-              An ability to function effectively on teams to establish goals,
-              plan tasks, meet deadlines, manage risk, and produce
-              deliverables.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-          <tr class="d-flex">
-            <td class="col-2">Leadership</td>
-            <td class="col-6">
-              An ability to evaluate and demonstrate leadership skills, make
-              sound data-driven decisions, take responsibility for actions,
-              manage workload, address challenges ethically and responsibly,
-              and communicate effectively on technical matters to a wide
-              variety of audiences.
-            </td>
-            <td class="col-4">
-              Projects, workshops, team/client meetings and communications
-            </td>
-          </tr>
-        </table>
+            <tr class="d-flex">
+              <td class="col-2">Communicating</td>
+              <td class="col-6">
+                An ability to apply principles and concepts with technologies to
+                design and develop computer based solutions.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Critical Thinking</td>
+              <td class="col-6">
+                An ability to analyze a problem, and to identify and define the
+                computing requirements appropriate to its solution.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Critical Thinking</td>
+              <td class="col-6">
+                An ability to design, implement, and evaluate a computer-based
+                solution to meet a given set of computing requirements in the
+                context of the discipline.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Managing Information</td>
+              <td class="col-6">
+                An ability to apply models, tools, and techniques to implement
+                computer-based applications aligned with industry standards.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Valuing</td>
+              <td class="col-6">
+                An ability to make informed judgments in computing practice
+                based on legal and ethical, and social principles.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Diversity, Equity, and Inclusion</td>
+              <td class="col-6">
+                An ability to: a. utilize inclusive language and behaviors, b.
+                implement applications accommodating a wide range of individuals
+                including diversity in ethnic/cultural background, or physical
+                ability, and c. function as an effective member of a diverse
+                team.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Teamwork</td>
+              <td class="col-6">
+                An ability to function effectively on teams to establish goals,
+                plan tasks, meet deadlines, manage risk, and produce
+                deliverables.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-2">Leadership</td>
+              <td class="col-6">
+                An ability to evaluate and demonstrate leadership skills, make
+                sound data-driven decisions, take responsibility for actions,
+                manage workload, address challenges ethically and responsibly,
+                and communicate effectively on technical matters to a wide
+                variety of audiences.
+              </td>
+              <td class="col-4">
+                Projects, workshops, team/client meetings and communications
+              </td>
+            </tr>
+          </table>
 
-        <p>Additional student learning outcomes include:</p>
+          <p>Additional student learning outcomes include:</p>
 
-        <nw-syllabus-outcomes-list></nw-syllabus-outcomes-list>
+          <nw-syllabus-outcomes-list></nw-syllabus-outcomes-list>
 
-        <h2>Materials</h2>
+          <h2>Materials</h2>
 
-        <p>Textbook (recommended)</p>
-        <ul>
-          <li>
-            Building Progressive Web Apps: Bringing the Power of Native to the
-            Browser, by Tal Ater, O'Reilly Media, September 2017
-          </li>
-        </ul>
+          <p>The following are recommended:</p>
 
-        <p>
-          Students must have access to the following at every course meeting:
-        </p>
-
-        <div class="form-check">
-          <ul class="list-group" style="list-style-type: none;">
-            <li id="101"
-              class="requirement-li  list-group-item list-group-item-action active">
-              A <strong>bound notebook with pencil/pen</strong> for taking
-              notes and submitting written content (e.g., pop quizzes)
+          <ul class="text-left">
+            <li class="tap-target-li">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.amazon.com/dp/B0792YDK9R/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1"
+                >PMI Agile Certified Practitioner (ACP) Handbook</a
+              >
             </li>
-            <li id="102"
-              class="requirement-li list-group-item list-group-item-action active">
-              Their campus-assigned laptop, in working order, with all
-              required software
+            <li class="tap-target-li">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.atlassian.com/agile/scrum"
+                >Scrum</a
+              >
             </li>
-            <li id="103"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://git-scm.com/">Git</a>
-              distributed version control system
+            <li class="tap-target-li">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.atlassian.com/agile/project-management"
+                >Agile Project Management</a
+              >
             </li>
-            <li id="104"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://tortoisegit.org/">TortoiseGit</a>
-              for integrating Git with Windows File Explorer
+            <li class="tap-target-li">
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software"
+                >How to do Scrum with Jira (and more)</a
+              >
             </li>
-            <li id="105"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a>
-              for creating SSH public/private key pairs
-            </li>
-            <li id="106"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://bitbucket.org">BitBucket</a>
-              and
-              <a rel="noopener" target="_blank"
-                href="https://github.com/">GitHub</a>
-              educational accounts
-            </li>
-            <li id="107"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://education.github.com/pack">GitHub Education
-                Pack</a>
-              (as needed)
-            </li>
-
-            <li id="108"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://chocolatey.org/">Chocolatey</a>
-              package manager for Windows
-            </li>
-            <li id="109"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://notepad-plus-plus.org/">Notepad++</a>
-              text editor
-            </li>
-            <li id="110"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://code.visualstudio.com/">Visual Studio Code</a>
-              integrated development environment
-            </li>
-
-            <li id="111"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free Atlassian
-              <a rel="noopener" target="_blank"
-                href="https://education.github.com/pack">Jira</a>
-              account for planning and tracking
-            </li>
-
-            <li id="112"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://developer.apple.com/xcode/">XCode</a>
-              integrated development environment (as needed)
-            </li>
-            <li id="113"
-              class="requirement-li list-group-item list-group-item-action active">
-              Free
-              <a rel="noopener" target="_blank"
-                href="https://developer.android.com/studio/">Android Studio</a>
-              integrated development environment (as needed)
-            </li>
-
-            <li id="117"
-              class="requirement-li list-group-item list-group-item-action active">
-              Various free, open-source tools, libraries, and hosting accounts
-              as directed by instructor.
-            </li>
-            <li id="118"
-              class="requirement-li list-group-item list-group-item-action active">
-              Access to free cloud accounts including Amazon Web Services
-              (AWS), Google Cloud Platform (GCP), IBM Cloud, Microsoft Azure,
-              and Oracle Cloud as required.
+            <li class="tap-target-li">
+              Building Progressive Web Apps: Bringing the Power of Native to the
+              Browser, by Tal Ater, O'Reilly Media, September 2017
             </li>
           </ul>
+
+          <p>
+            Students must have access to the following at every course meeting:
+          </p>
+
+          <div class="form-check">
+            <ul class="list-group" style="list-style-type: none;">
+              <li
+                id="101"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                A <strong>bound notebook with pencil/pen</strong> for taking
+                notes and submitting written content (e.g., pop quizzes)
+              </li>
+              <li
+                id="102"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Their campus-assigned laptop, in working order, with all
+                required software
+              </li>
+              <li
+                id="103"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a rel="noopener" target="_blank" href="https://git-scm.com/"
+                  >Git</a
+                >
+                distributed version control system
+              </li>
+              <li
+                id="104"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://tortoisegit.org/"
+                  >TortoiseGit</a
+                >
+                for integrating Git with Windows File Explorer
+              </li>
+              <li
+                id="105"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html"
+                  >PuTTY</a
+                >
+                for creating SSH public/private key pairs
+              </li>
+              <li
+                id="106"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a rel="noopener" target="_blank" href="https://bitbucket.org"
+                  >BitBucket</a
+                >
+                and
+                <a rel="noopener" target="_blank" href="https://github.com/"
+                  >GitHub</a
+                >
+                educational accounts
+              </li>
+              <li
+                id="107"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://education.github.com/pack"
+                  >GitHub Education Pack</a
+                >
+                (as needed)
+              </li>
+
+              <li
+                id="108"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a rel="noopener" target="_blank" href="https://chocolatey.org/"
+                  >Chocolatey</a
+                >
+                package manager for Windows
+              </li>
+              <li
+                id="109"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://notepad-plus-plus.org/"
+                  >Notepad++</a
+                >
+                text editor
+              </li>
+              <li
+                id="110"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://code.visualstudio.com/"
+                  >Visual Studio Code</a
+                >
+                integrated development environment
+              </li>
+
+              <li
+                id="111"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free Atlassian
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://education.github.com/pack"
+                  >Jira</a
+                >
+                account for planning and tracking
+              </li>
+
+              <li
+                id="112"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://developer.apple.com/xcode/"
+                  >XCode</a
+                >
+                integrated development environment (as needed)
+              </li>
+              <li
+                id="113"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Free
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://developer.android.com/studio/"
+                  >Android Studio</a
+                >
+                integrated development environment (as needed)
+              </li>
+
+              <li
+                id="117"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Various free, open-source tools, libraries, and hosting accounts
+                as directed by instructor.
+              </li>
+              <li
+                id="118"
+                class="requirement-li list-group-item list-group-item-action active"
+              >
+                Access to free cloud accounts including Amazon Web Services
+                (AWS), Google Cloud Platform (GCP), IBM Cloud, Microsoft Azure,
+                and Oracle Cloud as required.
+              </li>
+            </ul>
+          </div>
+
+          <nw-syllabus-outline> </nw-syllabus-outline>
+          <nw-syllabus-schedule> </nw-syllabus-schedule>
+
+          <h2>Instructional Methods and Techniques</h2>
+
+          Instructional methods include lectures, class discussions, individual
+          work, small group work, learner presentations, client
+          discussions,client communications, client presentations, and
+          collaborative development.
+
+          <nw-syllabus-contributions></nw-syllabus-contributions>
+
+          <nw-syllabus-grade-scale-standard></nw-syllabus-grade-scale-standard>
+
+          <nw-syllabus-professor-standard emailSubject="44-691-02">
+          </nw-syllabus-professor-standard>
+
+          <nw-syllabus-nw-standard> </nw-syllabus-nw-standard>
         </div>
-
-        <nw-syllabus-outline> </nw-syllabus-outline>
-        <nw-syllabus-schedule> </nw-syllabus-schedule>
-
-        <h2>Instructional Methods and Techniques</h2>
-
-        Instructional methods include lectures, class discussions, individual
-        work, small group work, learner presentations, client
-        discussions,client communications, client presentations, and
-        collaborative development.
-
-        <nw-syllabus-contributions></nw-syllabus-contributions>
-
-        <nw-syllabus-grade-scale-standard></nw-syllabus-grade-scale-standard>
-
-        <nw-syllabus-professor-standard emailSubject="44-691-02">
-        </nw-syllabus-professor-standard>
-
-        <nw-syllabus-nw-standard> </nw-syllabus-nw-standard>
       </div>
-    </div>
-    <!-- end container -->
-  </main>
+      <!-- end container -->
+    </main>
 
-  <nw-syllabus-footer
-    siteURL="https://denisecase.github.io/44-691-gdp1-syllabus"
-    sourceURL="https://github.com/denisecase/44-691-gdp1-syllabus">
-  </nw-syllabus-footer>
+    <nw-syllabus-footer
+      siteURL="https://denisecase.github.io/44-691-gdp1-syllabus"
+      sourceURL="https://github.com/denisecase/44-691-gdp1-syllabus"
+    >
+    </nw-syllabus-footer>
 
-  <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
 
-  <!-- Placed at the end so the page loads faster -->
-  <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
+    <!-- Placed at the end so the page loads faster -->
+    <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
 
-  <!-- Placed at the end so the page loads faster -->
-  <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
+    <!-- Placed at the end so the page loads faster -->
+    <!-- Add the 'defer' attribute for improved performance (script will be read after HTML finishes loading) -->
 
-  <!-- Copy in content from https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
+    <!-- Copy in content from https://mdbootstrap.com/docs/standard/getting-started/installation/ -->
 
-  <!-- MDB -->
-  <script defer type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.js"></script>
+    <!-- MDB -->
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0-alpha3/mdb.min.js"
+    ></script>
 
-  <!-- Mark.js -->
+    <!-- Mark.js -->
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.es6.min.js"
-    integrity="sha256-51i9DIUkhl5gZzZ5xKiWbJ2qXewVR6W0MUZYPVwmyJ4="
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.es6.min.js"
+      integrity="sha256-51i9DIUkhl5gZzZ5xKiWbJ2qXewVR6W0MUZYPVwmyJ4="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Google charts-->
+    <!-- Google charts-->
 
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <!-- Include custom data driven elements -->
+    <!-- Include custom data driven elements -->
 
-  <script defer type="module"
-    src="./custom-elements/nw-syllabus-contributions.js"></script>
-  <script defer type="module"
-    src="./custom-elements/nw-syllabus-outcomes-list.js"></script>
-  <script defer type="module" 
-    src="./custom-elements/nw-syllabus-outline.js"></script>
+    <script
+      defer
+      type="module"
+      src="./custom-elements/nw-syllabus-contributions.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./custom-elements/nw-syllabus-outcomes-list.js"
+    ></script>
+    <script
+      defer
+      type="module"
+      src="./custom-elements/nw-syllabus-outline.js"
+    ></script>
 
-  <!-- Include shared custom elements -->
+    <!-- Include shared custom elements -->
 
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-footer.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-grade-scale-standard.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-header.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-nw-standard.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-professor.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-professor-standard.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-schedule.js"></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-footer.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-grade-scale-standard.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-header.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-nw-standard.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-professor.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-professor-standard.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/custom-elements/nw-syllabus-schedule.js"
+    ></script>
 
-  <!-- Include shared custom scripts -->
+    <!-- Include shared custom scripts -->
 
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/active-checks.js"></script>
-  <script defer
-    src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/case-syllabus.js"></script>
-</body>
-
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/active-checks.js"
+    ></script>
+    <script
+      defer
+      src="https://denisecase.github.io/44-517-bigdata-syllabus/scripts/case-syllabus.js"
+    ></script>
+  </body>
 </html>

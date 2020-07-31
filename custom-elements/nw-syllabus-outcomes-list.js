@@ -12,7 +12,8 @@ class nwSyllabusOutcomesList extends HTMLElement {
     </div>
     `;
 
-    const liClassChecked = 'list-group-item list-group-item-action list-group-item-primary active';
+    const liClassChecked =
+      'list-group-item list-group-item-action list-group-item-primary active';
     const liClassUnchecked = 'list-group-item list-group-item-action';
     const cbClassChecked = 'state-icon fa fa-check-square';
     const cbClassUnchecked = 'state-icon far fa-square';
@@ -25,12 +26,14 @@ class nwSyllabusOutcomesList extends HTMLElement {
       newNode.innerHTML = item;
       newNode.style = 'cursor: pointer;';
       const isChecked = localStorage.getItem(newNode.id) === 'true';
-      newNode.className = isChecked === true ? liClassChecked : liClassUnchecked;
+      newNode.className =
+        isChecked === true ? liClassChecked : liClassUnchecked;
 
       // Then display a nice checkbox icon
 
       const newCheckBox = document.createElement('span');
-      newCheckBox.className = isChecked === true ? cbClassChecked : cbClassUnchecked;
+      newCheckBox.className =
+        isChecked === true ? cbClassChecked : cbClassUnchecked;
       newNode.insertBefore(newCheckBox, newNode.firstChild);
       this.querySelector('#outcomes-list').appendChild(newNode);
 
@@ -50,7 +53,7 @@ class nwSyllabusOutcomesList extends HTMLElement {
       });
     });
   }
-};
+}
 
 window.customElements.define(
   'nw-syllabus-outcomes-list',

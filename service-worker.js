@@ -32,6 +32,7 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/5.1.3/workbox-sw.js',
 );
 
+/* global workbox */
 if (workbox) {
   const appName = '44-691-gdp1-syllabus';
   const appVersion = 'v1';
@@ -58,7 +59,7 @@ if (workbox) {
 
   // use stale cached cdn font files while downloading new
 
- // CDN Fonts:
+  // CDN Fonts:
   // use stale cached files while downloading new for next time
   // set the max age of the cached files
 
@@ -77,7 +78,7 @@ if (workbox) {
     }),
   );
 
- workbox.routing.registerRoute(
+  workbox.routing.registerRoute(
     reSyllabus,
     new workbox.strategies.StaleWhileRevalidate({
       cacheName: precacheCacheName,
@@ -159,16 +160,18 @@ if (workbox) {
     event.waitUntil(
       caches
         .open(precacheCacheName)
-        .then((cache) => cache.addAll([
-          'index.html',
-          'init-contributions.js',
-          'init-outline.js',
-          'init-outcomes.js',
-          'scripts/register-sw.js',
-          'custom-elements/nw-syllabus-contributions.js',
-          'custom-elements/nw-syllabus-outcomes-list.js',
-          'custom-elements/nw-syllabus-outline.js',
-        ]))
+        .then((cache) =>
+          cache.addAll([
+            'index.html',
+            'init-contributions.js',
+            'init-outline.js',
+            'init-outcomes.js',
+            'scripts/register-sw.js',
+            'custom-elements/nw-syllabus-contributions.js',
+            'custom-elements/nw-syllabus-outcomes-list.js',
+            'custom-elements/nw-syllabus-outline.js',
+          ]),
+        )
         .catch((error) => {
           console.error(`Error in install event: ${error} `);
         }),
