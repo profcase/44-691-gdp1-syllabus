@@ -58,4 +58,4 @@ Office Hours
   }
 }
 
-window.customElements.define('nw-syllabus-professor-wCB', nwSyllabusProfessorwCB);
+window.customElements.define('nw-syllabus-professor-wcb', nwSyllabusProfessorwcb);
