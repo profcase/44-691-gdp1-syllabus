@@ -34,7 +34,7 @@ Office Hours
 <h3>Section 2</h3>
 Dr. Denise Case
 <br />
-Assistant Professor <br />
+Associate Professor <br />
 660.562.1136
 <br />
 <a rel="noopener" target="_top" href=
