@@ -73,6 +73,8 @@ export default class nwSyllabusContributions extends HTMLElement {
 
     // pie chart.........................................
 
+    /* global google */
+
     // Draw the chart and set the chart values
     function drawChart() {
       // Create the data table.

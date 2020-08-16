@@ -2,7 +2,7 @@
 
 export default {
   mod1: 'Course intro, client requirements and RFP, rapid response challenge',
-  mod2: 'App plan and design. Team organization, work allocation, consolidated detailed design documentation',
+  mod2: 'App plan and design. Team, work allocation, detailed design docs',
   mod3: 'Implementation of Minimally Viable Products (MVP) begins',
   mod4: 'Demonstrations, updates to design and MVPs',
   mod5: 'Demonstrations, updates to design and MVPs',

@@ -26,6 +26,9 @@
   "license": "MIT",
   "author": "Denise Case",
   "main": "service-worker.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
