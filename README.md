@@ -22,6 +22,19 @@
 - Site: <https://denisecase.github.io/44-691-gdp1-syllabus>
 - Source: <https://github.com/denisecase/44-691-gdp1-syllabus>
 
+## Printing to PDF from Chrome
+
+- Follow these recommended steps to print to PDF from Chrome browser:
+    1. In the Chrome main menu, go to "More tools" > "Developer tools"
+    1. In "Developer tools", click the three-dot menu (upper right) and go to "Run command"
+    1. Under "Run command", select "Screenshot Capture full size screenshot". A PNG file will be saved to your machine.
+    1. Open the PNG file in another Chrome tab.
+    1. **Important:** Click the image for full zoom.
+    1. In the Chrome main menu, select "Print...".
+    1. Change destination to "Save to PDF", make sure margins are set to "None", then click "Save"
+    1. The final PDF will be saved to your machine.
+
+
 ## Prerequistes
 
 - [Follow these guides for Windows users](https://denisecase.github.io/windows-dev-list/) to get set up for development.
