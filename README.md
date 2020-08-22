@@ -27,6 +27,7 @@
 - Follow these recommended steps to print to PDF from Chrome browser:
 1. In the Chrome main menu, go to "More tools" > "Developer tools"
 1. **Important:** Make sure the "Responsive" bar is closed, and that the width of the page is between 1200 and 1250 pixels (when hovering over html tag).
+![Print Prep](/images/syllabusPrintPrep.png)
 1. In "Developer tools", click the three-dot menu (upper right) and go to "Run command"
 1. Under "Run command", select "Screenshot Capture full size screenshot". A PNG file will be saved to your machine.
 1. Open the PNG file in another Chrome tab.
